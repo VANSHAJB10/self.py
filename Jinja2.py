@@ -9,4 +9,9 @@ The name is {{ name|upper }}
 
 #4. expression to join them to form a single sentence. {  "words": ["we","are","meant","to","be","together"]   }
 {{ words|join(' ') }}
-Output --> we are meant to be together
+  #Output --> we are meant to be together
+{{ words|join}}                   # will make the output --> wearemeanttobtogether
+{{ words|join(' ') | title }}     # To make the output in titlecase
+
+#5. expression to count the number of words.
+{{ words| wordcount  }}
