@@ -6,3 +6,7 @@ The name is {{ name|upper }}
 
 # 3. to replace the word 'Bourne' in dialogue with 'Bond'
 {{ dialogue| replace ("Bourne", "Bond") }}
+
+#4. expression to join them to form a single sentence. {  "words": ["we","are","meant","to","be","together"]   }
+{{ words|join(' ') }}
+Output --> we are meant to be together
